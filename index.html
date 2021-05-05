@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    
-  </head>
+    <head> </head>
 
-  <body>
-     <audio autoplay muted>
-        <source src="anthem.mp3" type="audio/mpeg">
-        <p>Bruh. Are you kidding me? What is this? What browser are you using?</p>
-      </audio> 
-    <p>test</p>
-  </body>
+    <body>
+        <audio id="myAudio">
+            <source src="/media/anthem.mp3" type="audio/mp3" />
+            Your browser does not support the audio element.
+        </audio>
+
+        <button onclick="playAudio()" type="button">Play Audio</button>
+
+        <script>
+            var x = document.getElementById("myAudio");
+
+            function playAudio() {
+                x.play();
+            }
+        </script>
+    </body>
 </html>
